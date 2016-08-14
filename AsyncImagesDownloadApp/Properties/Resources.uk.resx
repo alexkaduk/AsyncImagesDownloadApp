@@ -130,7 +130,7 @@
     <value>Процес асинхронного завантаження...</value>
   </data>
   <data name="Start_Button" xml:space="preserve">
-    <value>Почати завантаження</value>
+    <value>Показати</value>
   </data>
   <data name="Task_Status" xml:space="preserve">
     <value>статус поточного завдання</value>

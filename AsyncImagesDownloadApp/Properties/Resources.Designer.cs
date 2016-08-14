@@ -97,7 +97,7 @@ namespace AsyncImagesDownloadApp.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Start Download.
+        ///   Looks up a localized string similar to Show.
         /// </summary>
         public static string Start_Button {
             get {

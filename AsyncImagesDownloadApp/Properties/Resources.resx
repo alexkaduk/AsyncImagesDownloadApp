@@ -130,7 +130,7 @@
     <value>Async download progress...</value>
   </data>
   <data name="Start_Button" xml:space="preserve">
-    <value>Start Download</value>
+    <value>Show</value>
   </data>
   <data name="Task_Status" xml:space="preserve">
     <value>current task status</value>
