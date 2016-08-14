@@ -4,8 +4,9 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:AsyncImagesDownloadApp"
+        xmlns:p ="clr-namespace:AsyncImagesDownloadApp.Properties"
         mc:Ignorable="d"
-        Title="Async Images Donwload Application " 
+        Title="{x:Static p:Resources.Title}" 
         Height="440" Width="520" MinWidth="400"
         Icon="img/AsyncIco.png" 
         WindowStartupLocation="CenterScreen" >
@@ -80,7 +81,7 @@
                     <ColumnDefinition Width="211*"></ColumnDefinition>
                     <ColumnDefinition Width="90"></ColumnDefinition>
                 </Grid.ColumnDefinitions>
-                <TextBox x:Name="textBox5" Style="{StaticResource TextBoxStyle}" Text="http://phandroid.s3.amazonaws.com/wp-content/uploads/2012/04/steve-jobs-holding-iphone-550x412.jpg"/>
+                <TextBox x:Name="textBox5" Style="{StaticResource TextBoxStyle}" Text="http://aib.edu.au/blog/wp-content/uploads/2015/08/bill-gates-jpg.jpg"/>
                 <Image x:Name="imgThumbnail5" Style="{StaticResource ImageStyle}" Source="img/Async.png" />
             </Grid>
         </StackPanel>
@@ -102,7 +103,7 @@
             </Grid.Resources>
             <Button x:Name="startButton" 
                     Style="{StaticResource ButtonStyle}" 
-                    Content="Start Download" 
+                    Content="{x:Static p:Resources.Start_Button}" 
                     Grid.Row="0" 
                     Click="startButtonClick" />
             <TextBox x:Name="resultsTextBox" 

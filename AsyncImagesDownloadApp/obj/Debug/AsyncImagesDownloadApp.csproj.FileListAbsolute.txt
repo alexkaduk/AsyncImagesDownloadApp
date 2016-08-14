@@ -30,3 +30,6 @@ D:\projects\AsyncImagesDownloadApp\AsyncImagesDownloadApp\obj\Debug\PopupWindow.
 D:\projects\AsyncImagesDownloadApp\AsyncImagesDownloadApp\obj\Debug\AsyncImagesDownloadApp.g.resources
 D:\projects\AsyncImagesDownloadApp\AsyncImagesDownloadApp\obj\Debug\AsyncImagesDownloadApp.Properties.Resources.resources
 D:\projects\AsyncImagesDownloadApp\AsyncImagesDownloadApp\obj\Debug\AsyncImagesDownloadApp.csproj.GenerateResource.Cache
+D:\projects\AsyncImagesDownloadApp\AsyncImagesDownloadApp\bin\Debug\uk\AsyncImagesDownloadApp.resources.dll
+D:\projects\AsyncImagesDownloadApp\AsyncImagesDownloadApp\obj\Debug\AsyncImagesDownloadApp.Properties.Resources.uk.resources
+D:\projects\AsyncImagesDownloadApp\AsyncImagesDownloadApp\obj\Debug\uk\AsyncImagesDownloadApp.resources.dll

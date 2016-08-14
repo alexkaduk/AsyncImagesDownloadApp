@@ -60,7 +60,7 @@ namespace AsyncImagesDownloadApp
             {
                 Directory.CreateDirectory(currentDir + @"\img");
             }
-            
+
             popup.Show();
 
             int num = 0;
@@ -73,7 +73,8 @@ namespace AsyncImagesDownloadApp
 
                 num++;
                 popup.prgProgress.SetValue(ProgressBar.ValueProperty, (double)num / tasksCount);
-                popup.txtProgress.Text = "Download #" + num.ToString() + " starts; current task status: '" + firstFinishedTask.Status + "' (there are " + tasksCount.ToString() + " tasks)";
+                popup.txtProgress.Text = "#" + num + " " + Properties.Resources.Download_Starts + "; "
+                                                + Properties.Resources.Task_Status + ": '" + firstFinishedTask.Status + "'";
 
                 downloadTasks.Remove(firstFinishedTask);
 
@@ -82,7 +83,7 @@ namespace AsyncImagesDownloadApp
                     if (d.Id == firstFinishedTask.Result.Id)
                     {
                         d.DownLoadedImageContent = firstFinishedTask.Result.DownLoadedImageContent;
-                        d.DownloadedImagePath = Path.Combine(currentDir, "img", firstFinishedTask.Result.ImageComponentName.ToString() + ".png");
+                        d.DownloadedImagePath = Path.Combine(currentDir, "img", firstFinishedTask.Result.ImageComponentName + ".png");
 
                         File.WriteAllBytes(d.DownloadedImagePath, d.DownLoadedImageContent);
                     }

@@ -4,6 +4,7 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:AsyncImagesDownloadApp"
+        xmlns:p="clr-namespace:AsyncImagesDownloadApp.Properties"
         mc:Ignorable="d"
         Title="PopupWindow" Height="Auto" Width="Auto" WindowStartupLocation="Manual" Loaded="Window_Loaded" 
         AllowsTransparency="True" Background="Transparent"
@@ -21,7 +22,7 @@
                 BorderBrush="DarkGreen" BorderThickness="2">
             <Grid>
                 <Label x:Name="popupLabel" 
-                       Content="Async download progress..." 
+                       Content="{x:Static p:Resources.Popup_Title}" 
                        VerticalAlignment="Top" HorizontalAlignment="Center" 
                        Width="Auto" Height="30"/>
                 <ProgressBar x:Name="prgProgress" 

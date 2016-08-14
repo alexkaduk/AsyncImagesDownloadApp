@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Linq;
+using System.Threading;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Media;
@@ -15,6 +17,7 @@ namespace AsyncImagesDownloadApp
     {
         public MainWindow()
         {
+            //Thread.CurrentThread.CurrentUICulture = new CultureInfo("uk-Ua");
             InitializeComponent();
         }
 
@@ -28,16 +31,14 @@ namespace AsyncImagesDownloadApp
             try
             {
                 data = await asyncImagesDownloader.GetDownloadedData();
-
                 ShowThumbnails(data.ToList());
-
-                resultsTextBox.Text += "Downloads complete.\r\n";
+                resultsTextBox.Text += Properties.Resources.Download_Complete + ".\r\n";
             }
 
             catch (Exception)
             {
                 ShowDefaultThumbnails();
-                resultsTextBox.Text += "Downloads failed. Connection error, incorrect image URL or download canceled!\r\n";
+                resultsTextBox.Text += Properties.Resources.Download_Failed + "!\r\n";
             }
         }
 
